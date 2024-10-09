@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: prices
+  datasource:
+    url: jdbc:h2:mem:inditexdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ""
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  sql:
+    init:
+      platform: h2
+server:
+  port: 8080

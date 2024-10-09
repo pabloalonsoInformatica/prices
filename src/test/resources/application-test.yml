@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: prices-test
+  datasource:
+    url: jdbc:h2:mem:inditexdbtest
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ""
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  sql:
+    init:
+      mode: always
+      platform: h2
+
